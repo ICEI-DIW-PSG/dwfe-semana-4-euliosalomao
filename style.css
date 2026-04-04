@@ -221,3 +221,60 @@ a {
     font-size: 2.2rem;
   }
 }
+
+.sobre-layout {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.foto-box {
+  flex-shrink: 0;
+}
+
+.foto {
+  display: block;
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.416);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 280px;
+  background-color: #17171d;
+  border: 1px solid #2b2b36;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.sobre-texto p {
+  margin: 0;
+  color: var(--texto-suave);
+  line-height: 1.8;
+}
+
+.card1 {
+  display: block;
+  width: 150px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.416);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-capa img {
+  display: block;
+  width: 170px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #3a3a45;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.30);
+  margin-bottom: 16px;
+}
