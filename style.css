@@ -200,13 +200,41 @@ a {
   text-align: center;
 }
 
-/* RESPONSIVO */
+/* celular */
 @media (max-width: 800px) {
   .topo .container {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .hero-grid,
+  .lista-conceitos {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+/* tablet */
+@media (min-width: 700px) {
+  .obras-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+  .obras-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* seções */
   .menu {
     flex-wrap: wrap;
   }
@@ -235,8 +263,9 @@ a {
 
 .foto {
   display: block;
-  width: 240px;
-  height: 300px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.416);
@@ -270,9 +299,9 @@ a {
 
 .card-capa img {
   display: block;
-  width: 170px;
-  height: 260px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 170px;
+  height: auto;
   border-radius: 14px;
   border: 1px solid #3a3a45;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.30);
